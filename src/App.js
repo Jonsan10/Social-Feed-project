@@ -1,13 +1,27 @@
 import React, { useState } from 'react';
+import DisplayPost from './Components/DisplayPosts/DisplayPost';
 
 
 function App() {
 
-  const [postEntries, setPostEntries] =useState([])
+  const [post, setPost] =useState([])
+
+  function addNewPost(post){
+    let tempPost = [...post, post];
+
+    setPosts(tempPost)
+  }
 
   return (
     <div>
-      <h3> Social Feed</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Post</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   );
 }
