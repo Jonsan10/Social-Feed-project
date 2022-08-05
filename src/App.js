@@ -6,22 +6,19 @@ import NavBar from './Components/NavBar/NavBar';
 
 function App() {
 
-  const [post, setPost] =useState([])
+  const [posts, setPosts] =useState([])
 
   function addNewPost(post){
-    let tempPost = [...post, post];
+    let tempPost = [...posts, post];
 
-    setPost(tempPost)
+    setPosts(tempPost)
   }
 
   return (
     <div>
       <NavBar/>
-        <body className='body'>
           <CreatePost addNewPost={addNewPost}/>
-          <DisplayPost post = {post}/>
-        </body>
-
+          <DisplayPost posts = {posts}/>
     </div>
   );
 }

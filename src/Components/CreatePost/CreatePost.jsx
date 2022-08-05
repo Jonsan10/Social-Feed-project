@@ -12,7 +12,7 @@ const CreatePost = (props) => {
             userPost: userPost,
         };
         console.log(newPost)
-        props.addNewPostProperty(newPost)
+        props.addNewPost(newPost)
     }
 
     return ( 
