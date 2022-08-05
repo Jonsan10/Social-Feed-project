@@ -11,19 +11,17 @@ function App() {
   function addNewPost(post){
     let tempPost = [...post, post];
 
-    setPosts(tempPost)
+    setPost(tempPost)
   }
 
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Post</th>
-          </tr>
-        </thead>
-      </table>
+      <NavBar/>
+        <body className='body'>
+          <CreatePost addNewPost={addNewPost}/>
+          <DisplayPost post = {post}/>
+        </body>
+
     </div>
   );
 }
