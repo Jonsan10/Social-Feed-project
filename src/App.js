@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost/CreatePost';
 import DisplayPost from './Components/DisplayPosts/DisplayPost';
+import NavBar from './Components/NavBar/NavBar';
 
 
 function App() {
