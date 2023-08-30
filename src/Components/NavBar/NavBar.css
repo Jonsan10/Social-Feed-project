@@ -1,12 +1,13 @@
-.form-grid {
-    display: grid;
+.nav-header {
+    background-color: white;
+    color: black;
+    padding: 1em;
 }
 
-.form-group {
-    border: 1px;
-    border-style: solid;
-    border-color: black;
+h3 {
     margin: 1em;
-    padding: 1em;
+}
 
+.text-muted {
+    color: #999;
 }
